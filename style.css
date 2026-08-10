@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-  /* Gives the page an outer frame color visible behind the body */
-  background-color: #ffffff; 
-  height: 100%;
-}
-
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
   background-image: url('Untitled6.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   margin: 0;
-  border-radius: 12px;
+}
+
+.box {
+    height: 300px;
+    width: 200px;
+    background-color: #3e3f47;
+    border-radius: 12px;
 }
