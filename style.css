@@ -8,4 +8,5 @@ body {
   background-position: center;
   background-attachment: fixed;
   margin: 0;
+  filter:blur(30px)
 }
