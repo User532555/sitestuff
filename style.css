@@ -2,7 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --base-color: hsl(0, 0%, 100%);
-    --text-color: #000000;
-    --primary-color: #7090b6;
-    --secondary-color: #d1e2ec;
+    --text-color: rgb(0, 0, 0);
+    --primary-color: #315376;
+    --secondary-color: #43586C;
+    --color-three: #6A7C87;
+    --color-four: #A4A4A4;
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+    font-family: Montserrat;
+    color: var(--text-color);
+}
+
+body {
+    padding: 1em;
+    background-color: var(--base-color);
+}
+
+h1, h2, h3 {
+    font-family: Anta;
+}
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1000px, 100%);
 }
