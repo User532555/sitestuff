@@ -25,6 +25,7 @@ html {
 body {
     padding: 1em;
     background-color: var(--base-color);
+    border-radius: 1em;
 }
 
 h1, h3 {
