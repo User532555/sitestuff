@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-    --base-color: hsl(0, 0%, 100%);
-    --text-color: rgb(0, 0, 0);
-    --primary-color: #315376;
-    --secondary-color: #43586C;
-    --color-three: #6A7C87;
-    --color-four: #A4A4A4;
+    --base-color: hsl(0, 0%, 0%);
+    --text-color: rgb(106, 150, 190);
+    --primary-color: #16161f4d;
+    --secondary-color: rgb(57, 88, 117);
+    --color-three: #365b72;
+    --color-four: #536286;
 }
 
 *{
@@ -18,6 +18,8 @@ box-sizing: border-box;
 html {
     font-family: Montserrat;
     color: var(--text-color);
+    line-height: 2;
+    font-size: large;
 }
 
 body {
@@ -25,11 +27,75 @@ body {
     background-color: var(--base-color);
 }
 
-h1, h2, h3 {
+h1, h3 {
     font-family: Anta;
+    filter: drop-shadow(0 0 10px var(--secondary-color));
+    line-height: 1.5;
+    text-align: center;
+}
+
+h2 {
+    font-family: Anta;
+    filter: drop-shadow(0 0 10px var(--secondary-color));
+    line-height: 1.5;
 }
 
 nav {
     margin: 1em auto 3em auto;
     width: min(1000px, 100%);
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-radius: 1em;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5em 1em;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 1em var(--secondary-color);
+    background-color: var(--primary-color); 
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-radius: 1em;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5em 1em;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 2em var(--secondary-color);
+    background-color: var(--primary-color); 
+}
+
+header, section{
+    margin: 1em auto;
+    width: min(75em, 100%);
+    background-color: var(--primary-color);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+    border-color: var(--text-color);
+    box-shadow: 0 0 0.5em var(--secondary-color);
+}
+
+section{
+text-align: center;
+}
+
+section ul{
+list-style: circle;
+}
+
+.vid{
+    border-radius: 1em;
+    width: min(30em, 2100%);
 }
